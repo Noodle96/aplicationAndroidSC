@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "There is a new Actualization x2", Toast.LENGTH_LONG).show();
         int test = Test();
     }
-
+    //any to add
     public int Test(){
         int a = 10;
         int b = 15;
