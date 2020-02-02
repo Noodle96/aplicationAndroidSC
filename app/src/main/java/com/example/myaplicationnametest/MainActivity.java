@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import com.github.johnpersano.supertoasts.library.Style;
@@ -37,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
                 .setColor(PaletteUtils.getSolidColor(PaletteUtils.MATERIAL_PURPLE))
                 .setAnimations(Style.ANIMATIONS_POP).show();
     }
+
+    //añadiendo funcionalidad a los elemntos de la UI
+    public void showMessage(View view){
+        Toast.makeText(MainActivity.this,"button clicked from mainActivity!!", Toast.LENGTH_LONG).show();
+    }
+
     //any to add
     public int Test1(){
         int a = 10;
